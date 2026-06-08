@@ -9,7 +9,7 @@
   min-height:560px;
   display:flex;align-items:center;justify-content:center;
   text-align:center;overflow:hidden;
-  background:#3a3a3a url('/wp-content/uploads/revslider/home-1/home-1_slider-1_21.jpg') center 28%/cover no-repeat;
+  background:#3a3a3a url('../wp-content/uploads/revslider/home-1/home-1_slider-1_21.jpg') center 28%/cover no-repeat;
 }
 .lhh-hero__overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,28,28,.30),rgba(28,28,28,.55));}
 .lhh-hero__content{position:relative;z-index:2;padding:64px 24px;max-width:920px;}
