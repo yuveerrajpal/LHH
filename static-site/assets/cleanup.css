@@ -56,10 +56,14 @@ html{scroll-behavior:smooth;}
 /* Stat numbers: a touch more weight + tabular figures so width doesn't jitter while counting */
 .wgl-counter_value-wrap{font-variant-numeric:tabular-nums;font-feature-settings:"tnum";}
 
-/* Keep big stat numbers on ONE line so e.g. "₹ 10,00,000" never breaks after the
-   ₹ and grows taller than its neighbours — that's what threw the Mission 2025 row
-   out of alignment. nowrap keeps every counter single-line so the labels line up. */
+/* Mission 2025 stats: keep each number on ONE line, AND scale it down on narrow
+   screens. These columns stay 3-across (they don't stack on mobile), so a long
+   value like "₹ 10,00,000" must shrink to fit — otherwise it either breaks after
+   the ₹ (misaligning the labels) or overflows into the next stat. clamp() keeps
+   the desktop size (36px) but shrinks the figure on small viewports so it always
+   fits its column. */
 .wgl-counter_value-wrap,.wgl-counter__prefix,.wgl-counter__suffix{white-space:nowrap;}
+.wgl-counter_value-wrap,.wgl-counter_value-wrap *{font-size:clamp(20px,5vw,36px) !important;}
 
 /* Gentle button hover lift across theme buttons */
 .wgl-button,.elementor-button,.lhh-hero__btn{transition:transform .16s ease, background-color .2s ease, box-shadow .2s ease;}
