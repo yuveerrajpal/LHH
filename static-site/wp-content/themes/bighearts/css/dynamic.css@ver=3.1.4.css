@@ -1,0 +1,869 @@
+@charset "UTF-8";
+body {
+  font-family: var(--bighearts-content-font-family);
+  font-size: var(--bighearts-content-font-size);
+  line-height: var(--bighearts-content-line-height);
+  font-weight: var(--bighearts-content-font-weight);
+  color: var(--bighearts-content-color);
+  background: var(--bighearts-body-background);
+}
+
+h1, h1.elementor-heading-title, h2, h2.elementor-heading-title, h3, h3.elementor-heading-title, h4, h4.elementor-heading-title, h5, h5.elementor-heading-title, h6, h6.elementor-heading-title {
+  font-family: var(--bighearts-header-font-family);
+  font-weight: var(--bighearts-header-font-weight);
+  color: var(--bighearts-header-font-color);
+}
+h1 span,
+h1 a, h1.elementor-heading-title span,
+h1.elementor-heading-title a, h2 span,
+h2 a, h2.elementor-heading-title span,
+h2.elementor-heading-title a, h3 span,
+h3 a, h3.elementor-heading-title span,
+h3.elementor-heading-title a, h4 span,
+h4 a, h4.elementor-heading-title span,
+h4.elementor-heading-title a, h5 span,
+h5 a, h5.elementor-heading-title span,
+h5.elementor-heading-title a, h6 span,
+h6 a, h6.elementor-heading-title span,
+h6.elementor-heading-title a {
+  font: inherit;
+  color: inherit;
+  text-transform: inherit;
+}
+
+h1, h1.elementor-heading-title {
+  font-family: var(--bighearts-h1-font-family);
+  font-size: var(--bighearts-h1-font-size);
+  line-height: var(--bighearts-h1-line-height);
+  font-weight: var(--bighearts-h1-font-weight);
+  text-transform: var(--bighearts-h1-text-transform);
+}
+
+h2, h2.elementor-heading-title {
+  font-family: var(--bighearts-h2-font-family);
+  font-size: var(--bighearts-h2-font-size);
+  line-height: var(--bighearts-h2-line-height);
+  font-weight: var(--bighearts-h2-font-weight);
+  text-transform: var(--bighearts-h2-text-transform);
+}
+
+h3, h3.elementor-heading-title {
+  font-family: var(--bighearts-h3-font-family);
+  font-size: var(--bighearts-h3-font-size);
+  line-height: var(--bighearts-h3-line-height);
+  font-weight: var(--bighearts-h3-font-weight);
+  text-transform: var(--bighearts-h3-text-transform);
+}
+
+h4, h4.elementor-heading-title {
+  font-family: var(--bighearts-h4-font-family);
+  font-size: var(--bighearts-h4-font-size);
+  line-height: var(--bighearts-h4-line-height);
+  font-weight: var(--bighearts-h4-font-weight);
+  text-transform: var(--bighearts-h4-text-transform);
+}
+
+h5, h5.elementor-heading-title {
+  font-family: var(--bighearts-h5-font-family);
+  font-size: var(--bighearts-h5-font-size);
+  line-height: var(--bighearts-h5-line-height);
+  font-weight: var(--bighearts-h5-font-weight);
+  text-transform: var(--bighearts-h5-text-transform);
+}
+
+h6, h6.elementor-heading-title {
+  font-family: var(--bighearts-h6-font-family);
+  font-size: var(--bighearts-h6-font-size);
+  line-height: var(--bighearts-h6-line-height);
+  font-weight: var(--bighearts-h6-font-weight);
+  text-transform: var(--bighearts-h6-text-transform);
+}
+
+ol.commentlist:after {
+  background: var(--bighearts-body-background);
+}
+
+body.elementor-page main .wgl-container.wgl-content-sidebar,
+body.elementor-editor-active main .wgl-container.wgl-content-sidebar,
+body.elementor-editor-preview main .wgl-container.wgl-content-sidebar {
+  max-width: var(--bighearts-elementor-container-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.single main .wgl-container {
+  max-width: var(--bighearts-elementor-container-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bighearts-content-font-family {
+  font-family: var(--bighearts-content-font-family);
+}
+
+.bighearts-header-font-family {
+  font-family: var(--bighearts-header-font-family);
+}
+
+.bighearts-additional-font-family {
+  font-family: var(--bighearts-additional-font-family);
+}
+
+.bighearts-primary-color {
+  color: var(--bighearts-primary-color);
+}
+
+.bighearts-secondary-color {
+  color: var(--bighearts-secondary-color);
+}
+
+.bighearts-header-font-color {
+  color: var(--bighearts-header-font-color);
+}
+
+/* ==================== ↓ Content Font ==================== */
+input:not([type=checkbox]):not([type=submit]),
+select,
+textarea,
+label,
+.author-widget_text,
+.portfolio__custom-meta span,
+.tagcloud,
+.wp-block-tag-cloud,
+body .comment-form-cookies-consent > label,
+.bighearts_banner-widget .banner-widget_button .banner-widget__link,
+.elementor-widget-wgl-pricing-table .pricing_header .pricing_desc,
+.elementor-widget-wgl-time-line-vertical .time_line-content .time_line-text,
+.widget_meta .post_count,
+.widget_rss li .rssSummary,
+.widget_rss li .rss-date,
+.widget_text .textwidget,
+.wgl-portfolio-single_wrapper .wgl-portfolio-item_cats,
+.wgl-working-hours .working-item .working-item_day,
+.wgl-working-hours .working-item .working-item_hours,
+.wgl-accordion .wgl-accordion_title,
+.wgl-video_popup .title {
+  font-family: var(--bighearts-content-font-family);
+}
+
+.elementor-widget-wgl-time-line-vertical .time_line-content .time_line-text {
+  font-weight: var(--bighearts-content-font-weight);
+}
+
+::placeholder,
+select,
+body .footer .select__field:before,
+ul.wp-block-archives.wp-block-archives-list li a,
+.widget_rss .rssSummary,
+.header_search.search_standard .header_search-field .search-field,
+.search-no-results .page_404_wrapper .search-form .search-field,
+.recent-posts-widget .meta-data a:hover,
+.widget .recent-post-content,
+.isotope-filter a,
+.tagcloud a,
+.wp-block-tag-cloud a,
+.prev-link-info_wrapper,
+.next-link-info_wrapper {
+  color: var(--bighearts-content-color);
+}
+
+.single_meta .social-shares-wrapper > span.share_title,
+.social-shares-wrapper > span {
+  font-family: var(--bighearts-content-font-family);
+  color: var(--bighearts-content-color);
+}
+
+.bighearts_module_title .external_link .button-read-more {
+  line-height: var(--bighearts-content-line-height);
+}
+
+/* ==================== ## ↓ Heading Font ==================== */
+.blog-post_cats,
+.blog-posts .blog-post_title,
+.column1 .item_title a,
+.bighearts_twitter .twitt_title,
+.tagcloud-wrapper .title_tags,
+.tagcloud a,
+.wp-block-tag-cloud a,
+.wgl-likes .sl-count,
+.wgl-views .counter,
+.strip_template .strip-item a span,
+.single_team_page .team-single_speaches-info .speech-info_desc span,
+.shortcode_tab_item_title,
+.index_number,
+.primary-nav.footer-menu .menu-item a,
+.wgl-background-text,
+.elementor-section.wgl-add-background-text:before,
+.elementor-widget-wgl-pricing-table .wgl-pricing_plan .pricing_content,
+ul[id$=-radio-list] label,
+.wgl-header-date {
+  font-family: var(--bighearts-header-font-family);
+  font-weight: var(--bighearts-header-font-weight);
+}
+
+.theme-header-font,
+#comments .comment-reply-link,
+body ol > li:before,
+legend,
+.widget,
+.widget .widget-title,
+.banner_404,
+.page_404_wrapper .bighearts_404__link,
+.page-header_breadcrumbs,
+.meta-data,
+.blog-post_info-wrap > .meta-data span,
+.blog-post_content .meta-data,
+.blog-post_text-bg,
+.blog-post_quote-author,
+.isotope-filter a .number_filter,
+.button-read-more,
+.comments-title .number-comments,
+.post_categories,
+.wgl-pricing_plan .pricing_price .price_decimal,
+.mashsb-count .counts,
+.mashsb-box .mashsb-buttons a .text,
+.prev-link,
+.next-link,
+.wgl-pagination,
+.heading_subtitle,
+.info_prev-link_wrapper a,
+.info_next-link_wrapper a,
+.portfolio__custom-meta h5,
+.wgl-portfolio-item_cats,
+.isotope-filter a,
+body .comment-respond .comment-reply-title,
+.load_more_item,
+.page-header_title,
+[class|=dropcap],
+.elementor-drop-cap,
+ul.wp-block-archives.wp-block-archives-list li a,
+ul.wp-block-categories.wp-block-categories-list li a,
+ul.wp-block-categories.wp-block-categories-list li .post_count,
+ul.wp-block-latest-posts li a,
+.elementor-counter,
+.wgl-counter .wgl-counter_value-wrap,
+.wgl-pricing_plan .pricing_highlighter,
+.single_meta .meta-data,
+#comments .commentlist .comment_author_says,
+.wgl-likes,
+.wgl_module_team .team-department,
+.single_team_page .highlighted,
+.wgl-button,
+.wgl-pricing_plan .pricing_period,
+.wgl-testimonials .wgl-testimonials_date,
+.wgl-service-1 .wgl-service_subtitle,
+.wgl-pie_chart .pie_chart_title {
+  font-family: var(--bighearts-header-font-family);
+}
+
+blockquote,
+.banner_404,
+.author-info_public,
+.wgl-portfolio-single_item .tagcloud .tagcloud_desc,
+.wgl-portfolio-single_item .social-shares-wrapper .share_title {
+  font-family: var(--bighearts-header-font-family);
+  color: var(--bighearts-header-font-color);
+}
+
+.theme-header-color,
+body .footer select option,
+button,
+.share_post-container .share_post,
+#comments .comment-reply-link,
+.blog-style-hero .blog-post_title a,
+h3#reply-title a,
+.load_more_wrapper .load_more_item,
+.tagcloud a, .wp-block-tag-cloud a,
+.calendar_wrap tbody,
+.comment_author_says, .comment_author_says a,
+.search-field,
+.wgl-pagination .page-numbers, .wgl-pagination .post-page-numbers, .wgl-pagination .post-page-numbers:hover,
+.page-link .post-page-numbers:hover, .page-link .post-page-numbers.current,
+.tagcloud-wrapper .title_tags,
+.wgl-pricing_plan .pricing_plan_wrap .pricing_content > ul > li > b,
+.item_title a,
+.wgl_module_title.item_title .carousel_arrows a span:after,
+.wgl-portfolio-item_wrapper .portfolio_link,
+.author-info_social-wrapper .author-info_social-link.fa,
+.page_404_wrapper .search-form:after,
+.wgl-portfolio-single_wrapper .portfolio__item-meta > span:after,
+.button-read-more,
+.wgl-carousel .slick-arrow,
+.portfolio__see-more i,
+.wgl-header-row-section_top a:hover,
+.post-type-archive-team .team-icon,
+.single-team .single_team_page .team__icons .team-icon,
+.header_search-button,
+.header_search-close,
+.header_search.search_standard .header_search-field .search-form:after,
+.wgl-likes .liked .sl-count,
+.wgl-views,
+.blog-post_link .link_post:hover:before,
+.wgl-header-date {
+  color: var(--bighearts-header-font-color);
+}
+
+.author-widget_desc {
+  font-family: var(--bighearts-header-font-family);
+  font-weight: var(--bighearts-header-font-weight);
+}
+
+.author-widget_social a,
+.author-widget_desc,
+.calendar_wrap thead,
+ul.wp-block-categories.wp-block-categories-list li a,
+ul.wp-block-latest-posts li a,
+.widget .title,
+.widget_search .search-form:after,
+.widget_search .woocommerce-product-search:after,
+.widget_product_search .search-form:after,
+.widget_product_search .woocommerce-product-search:after,
+.wp-block-calendar tfoot a:hover {
+  color: var(--bighearts-header-font-color);
+}
+
+.widget_search .search-form:hover:after,
+.widget_search .woocommerce-product-search:hover:after,
+.widget_product_search .search-form:hover:after,
+.widget_product_search .woocommerce-product-search:hover:after,
+.page-link .post-page-numbers:after,
+.bighearts_module_title .carousel_arrows a span,
+.highlighter.header,
+.page_404_wrapper .search-form:hover:after {
+  background: var(--bighearts-header-font-color);
+}
+
+.wpcf7 .faq .submit-wrapper:hover:after {
+  background-color: var(--bighearts-header-font-color);
+}
+
+.bighearts_module_title .carousel_arrows a span:before,
+.wgl-pricing_plan .pricing_highlighter {
+  border-color: var(--bighearts-header-font-color);
+}
+
+.primary-nav > div > ul,
+.primary-nav > ul,
+.sitepress_container > .wpml-ls li,
+.polylang_switcher select,
+.primary-nav ul li.mega-menu-links > ul > li {
+  font-family: var(--bighearts-menu-font-family);
+  font-size: var(--bighearts-menu-font-size);
+  line-height: var(--bighearts-menu-line-height);
+  font-weight: var(--bighearts-menu-font-weight);
+}
+
+.primary-nav ul li ul,
+.wpml-ls,
+.sitepress_container > .wpml-ls ul ul li,
+.primary-nav ul li div.mega-menu-container {
+  font-family: var(--bighearts-submenu-font-family);
+  font-size: var(--bighearts-submenu-font-size);
+  line-height: var(--bighearts-submenu-line-height);
+  font-weight: var(--bighearts-submenu-font-weight);
+}
+
+.wgl-theme-header .header_search-field,
+.primary-nav ul li ul,
+.primary-nav ul li div.mega-menu-container,
+.wgl-theme-header .woo_mini_cart,
+.wpml-ls-legacy-dropdown .wpml-ls-current-language .wpml-ls-sub-menu {
+  color: var(--bighearts-submenu-color);
+  background-color: var(--bighearts-submenu-background);
+}
+
+.mobile_nav_wrapper,
+.wgl-menu_outer,
+.mobile_nav_wrapper .primary-nav ul li ul.sub-menu,
+.mobile_nav_wrapper .primary-nav ul li.mega-menu-links > ul.mega-menu > li > ul > li ul,
+.mobile_nav_wrapper .primary-nav ul li.mega-menu-links > ul.mega-menu > li > ul {
+  color: var(--bighearts-submenu-mobile-color);
+  background-color: var(--bighearts-submenu-mobile-background);
+}
+
+.wgl-menu_outer .mobile-hamburger-close {
+  color: var(--bighearts-submenu-mobile-color);
+}
+
+.mobile_nav_wrapper .wgl-menu_overlay {
+  background-color: var(--bighearts-submenu-mobile-overlay);
+}
+
+#side-panel .widget .title {
+  color: var(--bighearts-sidepanel-title-color);
+}
+
+.ares.tp-rightarrow .tp-title-wrap .tp-arr-titleholder,
+.ares.tp-leftarrow .tp-title-wrap .tp-arr-titleholder {
+  font-family: var(--bighearts-additional-font-family);
+}
+
+.additional_font,
+.meta-data .post_date,
+.wgl-portfolio .post_cats,
+.author-widget_title,
+.wgl-service-1 .wgl-service_title,
+.wgl-accordion-services .content__title,
+.wgl-flipbox_title span,
+.pricing_sub_title,
+.wgl-testimonials .wgl-testimonials_position,
+.wgl-double_heading .dbl__subtitle,
+.wgl-infobox .wgl-infobox_subtitle,
+.wgl-video_popup .title {
+  font-family: var(--bighearts-additional-font-family);
+  font-weight: var(--bighearts-additional-font-weight);
+}
+
+/* ================== ↓ Button ==================== */
+input[type=submit],
+button,
+.load_more_item,
+.load_more_works,
+#comments input.submit,
+.wgl-theme-header a.wgl-button {
+  font-family: var(--bighearts-button-font-family);
+  font-size: var(--bighearts-button-font-size);
+  font-weight: var(--bighearts-button-font-weight);
+  line-height: var(--bighearts-button-line-height);
+  text-transform: var(--bighearts-button-text-transform);
+  letter-spacing: var(--bighearts-button-letter-spacing);
+}
+
+#comments .comment-reply-link {
+  font-family: var(--bighearts-button-font-family);
+  font-weight: var(--bighearts-button-font-weight);
+  text-transform: var(--bighearts-button-text-transform);
+}
+
+.theme-primary-color,
+a,
+blockquote:before,
+a:hover .wgl-icon, .wgl-icon:hover,
+ol > li:before,
+ul.bighearts_plus li:before,
+ul.bighearts_hyphen li:before,
+.dropcap-bg.primary:not(.alt),
+h3#reply-title a:hover,
+ul.bighearts_check li:before,
+header.searсh-header .page-title span,
+#comments .comment-edit-link,
+.author-info_social-wrapper,
+.post_categories span,
+.meta-data > span:before,
+.meta-data .post_date,
+.wgl_module_team .team-title:hover,
+.blog-post_title i,
+.blog-post_link .link_post:hover,
+.post_featured_bg .meta-data span.post_author a:hover,
+.post_featured_bg .meta-data span.comments_post a:hover,
+.blog-style-standard .blog-post:hover .blog-post_wrapper .blog-post_meta_info .meta-data span,
+.blog-post_link .link_post:before,
+.blog-post.format-standard.link .blog-post_title:before,
+.blog-post_quote-text:before,
+.prev-link_wrapper a:hover .prev_title, .next-link_wrapper a:hover .next_title,
+.post_featured_bg .meta-data a:hover,
+.share_post-container:hover > a,
+.copyright a:hover,
+.comment_author_says a:hover,
+.bighearts_submit_wrapper:hover > i,
+.bighearts_custom_button i,
+.bighearts_custom_text a,
+.bighearts_twitter a,
+.header_search .header_search-button > i:hover,
+.header_search-field .search-form:after,
+.mc_form_inside #mc_signup_submit:hover,
+.share_link span.fa:hover,
+.share_post span.fa:hover,
+.wpml-ls a:hover,
+.wpml-ls-legacy-dropdown .wpml-ls-current-language:hover > a,
+.wpml-ls-legacy-dropdown .wpml-ls-current-language a:hover,
+.isotope-filter a:after,
+.single_type-1 .single_meta .post_author a:hover,
+.single_type-2 .single_meta .post_author a:hover,
+.meta-data a:hover,
+ul.wp-block-archives.wp-block-archives-list li a:hover,
+ul.wp-block-categories.wp-block-categories-list li a:hover,
+ul.wp-block-latest-posts li a:hover,
+.author-info_social-wrapper .author-info_social-link.fa:hover,
+.format-quote .blog-post_wrapper .blog-post_media_part:before,
+blockquote cite a,
+.banner_404__digit,
+.isotope-filter a:hover, .isotope-filter a.active,
+ul.wp-block-archives.wp-block-archives-list li:before,
+.wgl-views:before,
+.wgl-page-socials .social__link:hover,
+.wgl-page-socials .social__name,
+.wgl-testimonials .wgl-testimonials_item:before {
+  color: var(--bighearts-primary-color);
+}
+
+.single_team_page .team-info_wrapper .team-info_item a:hover,
+.single-member-page .member-icon:hover,
+.single-member-page .team-link:hover,
+.single_team_page .team-single_speaches-info .speech-info_day,
+.single_team_page .team__icons a:hover,
+.single_team_page .highlighted,
+.wgl_module_team .team__image-wrapper .team__icons .team-icon:first-child,
+.team-icons .member-icon:hover,
+.portfolio__custom-annotation .social-shares-wrapper .share_link:hover .fa,
+.wgl-portfolio-item_wrapper .portfolio_link-icon:hover,
+.wgl-portfolio-item_cats,
+.wgl_module_team .team-icon a,
+.wgl_module_team .team-icon a:hover,
+.under_image .portfolio__item-title .title:hover a,
+.wgl-portfolio_container .wgl-carousel.arrows_center_mode .slick-prev:hover:after,
+.wgl-portfolio_container .wgl-carousel.arrows_center_mode .slick-next:hover:after,
+.inside_image .portfolio__item-title .title,
+.inside_image .portfolio__item-meta,
+.wgl-portfolio-list_item .portfolio-category,
+.inside_image.sub_layer_animation .portfolio__item-meta,
+.wgl-portfolio-single_wrapper .wgl-portfolio-item_cats a:hover,
+.wgl-services-2 .wgl-services_media-wrap .elementor-icon {
+  color: var(--bighearts-primary-color);
+}
+
+.bighearts_widget > ul li:hover:before,
+.widget_product_categories ul li a:hover .post_count,
+.widget_rss ul li .rsswidget:hover,
+.widget_recent_entries ul li .post-date,
+.widget_meta ul li .post_count,
+.widget_nav_menu li.current-menu-ancestor > a,
+.widget_nav_menu li.current-menu-item > a,
+.recent-posts-widget .post__link:hover .post__title,
+.recent-posts-widget .meta-data a,
+.widget ul li a:hover,
+.widget.bighearts_widget.bighearts_banner-widget .banner-widget_text .tags_title:after,
+.widget a:hover > .post_count,
+.widget a:before,
+.widget.widget_recent_comments ul li span.comment-author-link a:hover,
+.isotope-filter a .number_filter,
+.widget_meta.widget ul li a:before,
+.widget_recent_entries > ul > li > a:hover:before,
+.wp-block-calendar tfoot a {
+  color: var(--bighearts-primary-color);
+}
+
+.wgl-theme-header .lavalamp-object,
+.primary-nav > ul > li.menu-item-has-children:hover > a > .menu-item__plus,
+.primary-nav > ul > li.mega-menu.mega-cat:hover > a > .menu-item__plus,
+.primary-nav ul li ul li > a:hover,
+.mobile_nav_wrapper .primary-nav ul li ul .menu-item.current-menu-item > a,
+.mobile_nav_wrapper .primary-nav ul ul li.menu-item.current-menu-ancestor > a,
+.mobile_nav_wrapper .primary-nav > ul > li.current_page_item > a {
+  color: var(--bighearts-primary-color);
+}
+
+.primary-nav ul li.mega-menu.mega-cat div.mega-menu-container ul.mega-menu.cats-horizontal > li.is-active > a,
+.mobile_nav_wrapper .primary-nav > ul > li > a > span:after,
+.wgl-menu_outer .mobile-hamburger-close {
+  background: var(--bighearts-primary-color);
+}
+
+.primary-nav > ul > li:hover > a,
+.primary-nav ul li[class*=current] > a {
+  color: var(--bighearts-primary-color);
+}
+
+.primary-nav > ul > li[class*=current]:not(:hover) > a > .menu-item__plus,
+.primary-nav ul li ul li[class*=current]:not(:hover) > a,
+.primary-nav ul li ul li[class*=current]:not(:hover) > a > .menu-item__plus {
+  color: var(--bighearts-primary-color);
+}
+
+header .header-link:hover,
+.hover_links a:hover {
+  color: var(--bighearts-primary-color) !important;
+}
+
+.wgl-video_popup .videobox_link {
+  fill: var(--bighearts-primary-color);
+}
+
+ul.bighearts_dot li:before,
+#multiscroll-nav span,
+#multiscroll-nav li .active span,
+.page-header_breadcrumbs .breadcrumbs > a:before,
+.page-header_breadcrumbs .breadcrumbs > a:after,
+.wpml-ls-legacy-dropdown .wpml-ls-sub-menu .wpml-ls-item a span:before,
+.wgl-portfolio-item_wrapper .wgl-portfolio-item_icon:hover,
+ul.wp-block-categories.wp-block-categories-list li a:hover:after,
+.wpcf7 .demo-1-form .wpcf7-submit,
+.dropcap-bg.primary.alt,
+.tagcloud a:hover,
+.wp-block-tag-cloud a:hover,
+.post_categories span a,
+.prev-link_wrapper .image_prev:after,
+.next-link_wrapper .image_next:after,
+.prev-link_wrapper:hover .image_prev.no_image:after,
+.next-link_wrapper:hover .image_next.no_image:after,
+.wgl_module_team .team__icons:hover .team__icons-plus,
+.wgl_module_team .team__icons-plus:before,
+.wgl_module_team .team__icons-plus:after,
+.wgl_module_team .team__icons,
+.elementor-slick-slider .slick-slider .slick-next,
+.elementor-slick-slider .slick-slider .slick-prev,
+.footer .wpcf7 .footer-submit:hover:before,
+.team-single_wrapper.team-morph:before,
+.wgl_module_team.team-morph .team-item_wrap:hover:before {
+  background: var(--bighearts-primary-color);
+}
+
+#comments > h3:after,
+button:hover,
+mark,
+.highlighter.primary,
+.header_search .header_search-field .header_search-button-wrapper,
+.header_search.search_mobile_menu .header_search-field .search-form:after,
+.sitepress_container > .wpml-ls ul ul li a:hover:after,
+.format-video .blog-post_media .blog-post_media_part .videobox_link:hover,
+.single_post_info .wgl-likes .sl-button .sl-count,
+.single_post_info .post_views .counter,
+.blog-posts .share_post-container .share_post span:hover,
+.calendar_wrap caption,
+.comment-reply-title:after,
+.bighearts_module_title:after,
+.bighearts_module_title .carousel_arrows a:hover span,
+.mc_form_inside #mc_signup_submit,
+.slick-dots li button,
+.wgl-carousel .slick-dots li button:before,
+.wgl-pagination .page-numbers:not(.dots):hover, .wgl-pagination .page-numbers.current,
+.wgl-pagination .post-page-link:not(.dots):hover, .wgl-pagination .current.post-page-numbers .post-page-link,
+.wgl-ellipsis span,
+.wgl_module_title.item_title .carousel_arrows a:hover,
+.wgl-portfolio_item_link:hover,
+.elementor-slick-slider .slick-slider .slick-prev:hover,
+.elementor-slick-slider .slick-slider .slick-next:hover,
+.elementor-slick-slider .slick-slider .slick-prev:focus,
+.elementor-slick-slider .slick-slider .slick-next:focus {
+  background-color: var(--bighearts-primary-color);
+}
+
+aside > .widget + .widget:before,
+.author-widget_social a:hover,
+.widget_meta ul li a:hover:after,
+.widget .counter_posts,
+.widget_postshero .recent-posts-widget .post_cat a,
+.widget_nav_menu .current-menu-item > a:before,
+.widget_nav_menu .current-menu-ancestor > a:before,
+.wp-block-calendar table caption,
+.wp-block-calendar #today > a:before,
+.wpcf7 .faq .wpcf7-form-control-wrap:before {
+  background-color: var(--bighearts-primary-color);
+}
+
+.wpcf7 .wpcf7-submit,
+.single-team .single_team_page .team__icons .team-icon:hover,
+.wgl-carousel.navigation_offset_element .slick-prev:hover,
+.wgl-carousel.navigation_offset_element .slick-next:hover,
+.prev-link:hover,
+.next-link:hover,
+.wpcf7 .call_to_action_1 .wgl_col-2 .wpcf7-submit:hover,
+.coming-soon_form .wpcf7 .wpcf7-submit,
+form.post-password-form input[type=submit]:hover,
+.wgl-carousel .slick-arrow:hover {
+  border-color: var(--bighearts-primary-color);
+  background: var(--bighearts-primary-color);
+}
+
+.header_search,
+.post_categories span a,
+.blog-post.format-quote .blog-post_quote-text,
+.bighearts_module_title .carousel_arrows a:hover span:before,
+.author-info_social-link:after,
+.author-widget_social a span,
+.wgl-carousel.pagination_circle_border li.slick-active button,
+.wgl-carousel.pagination_square_border li.slick-active button,
+.social-shares-wrapper .share_link .share-icon_animation,
+.wpcf7 .call_to_action_1 .wgl_col-2 .wpcf7-submit,
+.wgl-portfolio_item_link,
+.wp-block-search__button {
+  border-color: var(--bighearts-primary-color);
+}
+
+.author-widget_social a:hover {
+  border-color: var(--bighearts-primary-color);
+}
+
+.theme-secondary-color,
+.page-header_breadcrumbs .breadcrumbs > a:hover,
+.single_post_info .wgl-likes .sl-button:hover,
+.wgl-likes .sl-icon.unliked,
+.wgl-likes .sl-button:hover,
+ul.bighearts_check.secondary li:before,
+.single_post_info .share_post-container:hover > a,
+.dropcap-bg.secondary:not(.alt),
+.page-header_breadcrumbs .breadcrumbs .current,
+.comment-respond .comment-form a:hover,
+#comments .comment-edit-link:hover,
+.blog-post_title > a:hover,
+.portfolio-item__title .title:hover,
+.wgl-portfolio .portfolio__item-meta span a:hover {
+  color: var(--bighearts-secondary-color);
+}
+
+.highlighter.secondary,
+ul.bighearts_dot.secondary li:before,
+.dropcap-bg.secondary.alt,
+.wgl-carousel .slick-arrow:active,
+form.post-password-form input[type=submit]:hover {
+  background-color: var(--bighearts-secondary-color);
+}
+
+.prev-link_wrapper .image_prev.no_image:after,
+.next-link_wrapper .image_next.no_image:after,
+.single_post_info .share_post-container .share_social-wpapper {
+  background: var(--bighearts-secondary-color);
+}
+
+.single-team .single_team_page .team__icons .team-icon,
+.wgl-carousel .slick-arrow:active {
+  border-color: var(--bighearts-secondary-color);
+}
+
+.author-widget_title {
+  color: var(--bighearts-secondary-color);
+}
+
+.widget .title-wrapper .title__line:after,
+.bighearts_banner-widget:hover .banner-widget_button {
+  background: var(--bighearts-secondary-color);
+}
+
+.author-widget_social a,
+.bighearts_banner-widget .banner-widget_button {
+  border-color: var(--bighearts-secondary-color);
+}
+
+.post_categories span a:hover {
+  background: var(--bighearts-secondary-color);
+  border-color: var(--bighearts-secondary-color);
+}
+
+button,
+button:focus,
+button:active {
+  color: var(--bighearts-button-color-idle);
+}
+
+input[type=submit],
+.load_more_works,
+#comments input.submit,
+.search__icon,
+.wgl-button,
+.wgl-theme-header .wgl-button,
+.wgl-theme-header a.wgl-button,
+.wgl-demo-item .wgl-button:hover,
+.wgl-demo-item .wgl-button {
+  background-color: var(--bighearts-button-color-idle);
+}
+
+.wpcf7 .wpcf7-submit:hover,
+.coming-soon_form .wpcf7 .wpcf7-submit:hover,
+.wpcf7 .demo-1-form .wpcf7-submit:hover,
+input[type=submit]:hover,
+#comments input.submit:hover,
+.search-button:hover + .search__icon,
+#comments .comment-reply-link:hover,
+.load_more_item:hover,
+.wgl-theme-header a.wgl-button:hover,
+.wgl-button:hover:not(.button-read-more) {
+  background-color: var(--bighearts-button-color-hover);
+}
+
+.wgl-button,
+.wgl-theme-header .wgl-button,
+.wgl-theme-header a.wgl-button,
+.wgl-demo-item .wgl-button:hover,
+.wgl-demo-item .wgl-button {
+  border-color: var(--bighearts-button-color-idle);
+}
+
+.load_more_item,
+.wgl-button:hover,
+.wgl-theme-header .wgl-button,
+.wgl-theme-header a.wgl-button,
+.wgl-demo-item .wgl-button:hover,
+.wgl-demo-item .wgl-button {
+  border-color: var(--bighearts-button-color-hover);
+}
+
+#scroll_up:empty {
+  color: var(--bighearts-back-to-top-color);
+  background-color: var(--bighearts-back-to-top-color);
+}
+
+#scroll_up:empty:before {
+  background-color: var(--bighearts-back-to-top-background);
+}
+
+#scroll_up:not(:empty) {
+  color: var(--bighearts-back-to-top-color);
+  background-color: var(--bighearts-back-to-top-background);
+}
+
+#scroll_up:not(:empty):hover {
+  color: var(--bighearts-back-to-top-background);
+  background-color: var(--bighearts-back-to-top-color);
+}
+
+.inside_image.offset_animation .portfolio__description:before {
+  background-color: var(--bighearts-average-of-primary-and-secondary);
+}
+
+/* Footer CSS */
+.footer_top-area .widget.widget_archive ul li > a:hover,
+.footer_top-area .widget.widget_categories ul li > a:hover,
+.footer_top-area .widget.widget_pages ul li > a:hover,
+.footer_top-area .widget.widget_meta ul li > a:hover,
+.footer_top-area .widget.widget_recent_comments ul li > a:hover,
+.footer_top-area .widget.widget_recent_entries ul li > a:hover,
+.footer_top-area .widget.widget_nav_menu ul li > a:hover,
+.footer_top-area .widget.widget_wgl_posts .recent-posts-widget li > .recent-posts-content .post_title a:hover {
+  color: var(--bighearts-primary-color);
+}
+
+.footer ul li:before,
+.footer_top-area a:hover {
+  color: var(--bighearts-primary-color);
+}
+
+.footer_top-area .widget-title,
+.footer_top-area .widget_rss ul li .rsswidget,
+.footer_top-area .widget.widget_pages ul li a,
+.footer_top-area .widget_nav_menu a,
+.footer_top-area .widget.widget_wgl_posts .recent-posts-widget li > .recent-posts-content .post_title a,
+.footer_top-area .widget.widget_archive ul li > a,
+.footer_top-area .widget.widget_categories ul li > a,
+.footer_top-area .widget.widget_pages ul li > a,
+.footer_top-area .widget.widget_meta ul li > a,
+.footer_top-area .widget.widget_recent_comments ul li > a,
+.footer_top-area .widget.widget_recent_entries ul li > a,
+.footer_top-area .widget.widget_archive ul li:before,
+.footer_top-area .widget.widget_categories ul li:before,
+.footer_top-area .calendar_wrap thead,
+.footer_top-area strong,
+.footer_top-area h1, .footer_top-area h2, .footer_top-area h3, .footer_top-area h4, .footer_top-area h5, .footer_top-area h6 {
+  color: var(--bighearts-footer-heading-color);
+}
+
+.footer_top-area {
+  color: var(--bighearts-footer-content-color);
+}
+
+.footer_top-area .widget.widget_archive ul li:after,
+.footer_top-area .widget.widget_pages ul li:after,
+.footer_top-area .widget.widget_meta ul li:after,
+.footer_top-area .widget.widget_recent_comments ul li:after,
+.footer_top-area .widget.widget_recent_entries ul li:after,
+.footer_top-area .widget.widget_nav_menu ul li:after,
+.footer_top-area .widget.widget_categories ul li:after {
+  background-color: var(--bighearts-footer-content-color);
+}
+
+.footer .copyright {
+  color: var(--bighearts-copyright-content-color);
+}
+
+.footer .wpcf7 form > p:last-of-type:after {
+  background-color: var(--bighearts-primary-color);
+}

@@ -1,0 +1,160 @@
+/* ============================================================
+   Little Heart Heroes — static-site cleanup layer
+   Loaded last so it overrides the BigHearts/Elementor theme.
+   ============================================================ */
+
+/* ---------- Static hero (replaces the heavy RevSlider) ---------- */
+.lhh-hero{
+  position:relative;
+  min-height:560px;
+  display:flex;align-items:center;justify-content:center;
+  text-align:center;overflow:hidden;
+  background:#3a3a3a url('/wp-content/uploads/revslider/home-1/home-1_slider-1_21.jpg') center 28%/cover no-repeat;
+}
+.lhh-hero__overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,28,28,.30),rgba(28,28,28,.55));}
+.lhh-hero__content{position:relative;z-index:2;padding:64px 24px;max-width:920px;}
+.lhh-hero__content h1{
+  color:#fff;font-family:'Quicksand',sans-serif;font-weight:700;
+  font-size:56px;line-height:1.18;margin:0 0 30px;letter-spacing:.5px;
+  text-shadow:0 2px 20px rgba(0,0,0,.30);
+}
+.lhh-hero__btn{
+  display:inline-block;background:#f74f22;color:#fff;
+  font-family:'Quicksand',sans-serif;font-weight:700;
+  padding:15px 44px;border-radius:40px;text-decoration:none;
+  letter-spacing:1.5px;text-transform:uppercase;font-size:14px;
+  transition:transform .15s ease, background .2s ease;
+}
+.lhh-hero__btn:hover{background:#df3f15;transform:translateY(-2px);color:#fff;}
+@media(max-width:767px){
+  .lhh-hero{min-height:430px;}
+  .lhh-hero__content{padding:48px 20px;}
+  .lhh-hero__content h1{font-size:30px;margin-bottom:24px;}
+}
+
+/* Hide any leftover RevSlider remnants if the script re-injects them */
+.wp-block-themepunch-revslider, sr7-module, rs-module-wrap{display:none !important;}
+
+/* ---------- Static YouTube embed (replaces JS-built Elementor video) ---------- */
+.lhh-video{position:relative;width:100%;padding-top:56.25%;border-radius:6px;overflow:hidden;background:#000;}
+.lhh-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+
+/* ============================================================
+   Polish layer: reveal animations, hovers, balance
+   ============================================================ */
+html{scroll-behavior:smooth;}
+
+/* Scroll-reveal (JS adds .is-visible). No-JS = always visible. */
+.lhh-reveal{opacity:0;transform:translateY(26px);
+  transition:opacity .7s cubic-bezier(.22,.61,.36,1), transform .7s cubic-bezier(.22,.61,.36,1);
+  will-change:opacity,transform;}
+.lhh-reveal.is-visible{opacity:1;transform:none;}
+
+/* Hide empty/placeholder stat counters so rows stay balanced */
+.lhh-empty-stat{display:none !important;}
+
+/* Stat numbers: a touch more weight + tabular figures so width doesn't jitter while counting */
+.wgl-counter_value-wrap{font-variant-numeric:tabular-nums;font-feature-settings:"tnum";}
+
+/* Gentle button hover lift across theme buttons */
+.wgl-button,.elementor-button,.lhh-hero__btn{transition:transform .16s ease, background-color .2s ease, box-shadow .2s ease;}
+.wgl-button:hover,.elementor-button:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(0,0,0,.12);}
+
+/* Partner logos / content images: subtle hover focus */
+.elementor-widget-image img,.wgl-portfolio-item_image img{transition:transform .35s ease, filter .35s ease;}
+.elementor-widget-image:hover img{transform:scale(1.03);}
+
+/* Smoother nav link feel */
+.wgl-menu a,.menu-item a{transition:color .2s ease;}
+
+/* Equal-height feel for stat rows: keep counters vertically centered */
+.elementor-widget-wgl-counter .wgl-counter{height:100%;display:flex;flex-direction:column;justify-content:center;}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto;}
+  .lhh-reveal{opacity:1;transform:none;transition:none;}
+}
+
+/* ---------- Consistency: hide the header top bar on every page ----------
+   (date + tagline + contact + social row). The theme only hid it where the
+   wrapper was a <header> tag, so it leaked onto some pages. This hides it
+   tag-agnostically everywhere for a consistent, clean header. */
+.elementor-element-94a2949{display:none !important;}
+
+/* ---------- Make the hero full-bleed (kill the white frame) ---------- */
+.lhh-hero{
+  width:100vw;max-width:100vw;
+  margin-left:calc(50% - 50vw);
+  margin-right:calc(50% - 50vw);
+}
+/* remove side padding of the hero's Elementor wrapper so nothing insets it */
+.elementor-widget-container > .lhh-hero{margin-top:0;margin-bottom:0;}
+
+/* Remove the 60px gap between the full-bleed hero and the first content section */
+.elementor-element-ed1f2b2{margin-top:0 !important;}
+
+/* ---------- Tidy Word-pasted content typography ----------
+   The theme applies a ~40px line-height to copy, which makes bullet lists and
+   paragraphs sprawl with huge gaps. Normalize to clean, readable spacing. */
+.elementor-widget-text-editor p{line-height:1.7;}
+.elementor-widget-text-editor ul{margin:14px 0;padding-left:22px;}
+.elementor-widget-text-editor li{line-height:1.6;margin-bottom:8px;}
+.elementor-widget-text-editor li:last-child{margin-bottom:0;}
+
+/* ---------- Cyclothon "Why cycling": balance the video with the long text ----------
+   The video sat small and top-aligned, leaving a tall empty gap below it next to
+   the bullet list. Make it fill its column width and vertically center it so it
+   sits beside the middle of the text. */
+.elementor-widget-video{width:100%;}
+.elementor-widget-video video{
+  width:100%;height:auto;max-width:100%;max-height:560px;
+  border-radius:10px;display:block;box-shadow:0 10px 30px rgba(0,0,0,.10);
+}
+/* The video column is already stretched to match the tall text column, but the
+   video sits pinned at the top. Center it vertically within the column's flex wrap. */
+.elementor-widget-wrap:has(> .elementor-widget-video){align-items:center;}
+
+/* ---------- "How Can You Help?" + "The Outcome": clean card panels ---------- */
+.elementor-element-031be4a, .elementor-element-989d10f{
+  background:#fff7f1;
+  border:1px solid #f4ddcb;
+  border-radius:16px;
+  padding:32px 34px !important;
+  box-shadow:0 10px 28px rgba(159,43,37,.06);
+}
+.elementor-element-031be4a ul, .elementor-element-989d10f ul{
+  list-style:none; padding-left:0; margin:16px 0 0;
+}
+.elementor-element-031be4a li, .elementor-element-989d10f li{
+  position:relative; padding-left:26px; margin-bottom:13px; line-height:1.6;
+}
+.elementor-element-031be4a li:last-child, .elementor-element-989d10f li:last-child{margin-bottom:0;}
+.elementor-element-031be4a li::before, .elementor-element-989d10f li::before{
+  content:""; position:absolute; left:2px; top:.48em;
+  width:9px; height:9px; border-radius:50%; background:#f74f22;
+}
+
+/* ============================================================
+   Fix: restore mobile navigation (was completely missing)
+   ------------------------------------------------------------
+   The BigHearts "show on small screens" rule targets
+   `header.wgl-theme-header.wgl-mobile-header` — i.e. the <header>
+   element itself carrying the class. In this static export the mobile
+   header is a CHILD <div> of the single <header>, so that rule never
+   matched: at <=1300px the desktop nav was hidden and the mobile nav
+   never appeared, leaving small screens with NO navigation at all.
+   Re-point the rule at the actual DOM structure. The theme's hamburger
+   JS still works, so this is a pure visibility fix. ============================================================ */
+@media (max-width:1300px){
+  /* hide the desktop + sticky headers, reveal the mobile header bar */
+  .wgl-theme-header .wgl-site-header,
+  .wgl-theme-header .wgl-sticky-header{display:none !important;}
+  .wgl-theme-header .wgl-mobile-header{display:block !important;}
+
+  /* In the mobile bar: hide the full menu that was leaking in inline, and
+     reveal the hamburger button (the theme's rules for both were mis-scoped
+     to the <header> element instead of these child divs). The real menu lives
+     in the slide-out panel (.mobile_nav_wrapper) and is untouched. */
+  .wgl-theme-header .wgl-mobile-header .wgl-header-row .primary-nav{display:none !important;}
+  .wgl-theme-header .wgl-mobile-header .hamburger-box{display:inline-flex !important;}
+}
