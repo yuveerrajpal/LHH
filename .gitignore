@@ -1,34 +1,16 @@
-# --- Credentials / secrets (NEVER commit) ---
-# Full WordPress site download lives here and contains live secrets:
-#   public_html/wp-config.php        -> DB credentials + authentication salts
-#   public_html/.private/config.json -> hosting/credentials
-# The repo is GitHub-bound; ignoring the whole dump prevents a credential leak.
-# (Matches the intent of the DO_NOT_UPLOAD_HERE marker file.)
 public_html/
 
-# If you ever want to version-control sanitized parts of the site, un-ignore
-# them explicitly below, e.g.:
-#   !public_html/wp-content/themes/bighearts-child/
-# but NEVER un-ignore wp-config.php or anything under .private/.
-
-# --- OS / editor cruft ---
 .DS_Store
 Thumbs.db
 *.swp
 *~
 
-# --- Logs ---
 *.log
 
-# --- Local Docker dev: never commit the database export (personal data) ---
 local-dev/db-import/*.sql
 local-dev/db-import/*.sql.gz
 local-dev/db-import/*.zip
 
-# --- Large/redundant + local-only ---
-# 15MB raw site download; duplicate of static-site/
 little-heart-heroes-site.zip
-# marker file
 DO_NOT_UPLOAD_HERE
-# local machine permissions, not for sharing
 .claude/settings.local.json
